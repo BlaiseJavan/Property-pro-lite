@@ -638,11 +638,20 @@ span.psw {
 
 	.alert {
 		padding: 10px;
-		background-color: #f44336;
-		color: white;
+		color: #D8000C;
+    background-color: #FFD2D2;
 		margin: 5% auto 0 auto; 
 
   width: 80%; 
+	}
+
+	.alert-success{
+		padding: 10px;
+		color: #4F8A10;
+    background-color: #DFF2BF;
+		margin: 5% auto 0 auto; 
+
+  width: 80%;
 	}
 	
 	.closebtn {

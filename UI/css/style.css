@@ -122,6 +122,7 @@ img{ max-width:100%; height:auto;}
 #secondary-navigation ul{
 	margin:0;
 	padding:0;
+	list-style: none;
 }
 #secondary-navigation ul li a{ 
 	background:#E6E6E6;
@@ -130,6 +131,7 @@ img{ max-width:100%; height:auto;}
 	margin:5px 0; 
 	padding:10px;
 	text-decoration:none;
+	
 }
 #secondary-navigation ul li a:hover,
 #secondary-navigation ul li.current a{
@@ -551,6 +553,23 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
+.inp-date{
+	width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.inp-image{
+	width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 /* Set a style for all buttons */
 .button {
   background-color: #333;
@@ -560,6 +579,50 @@ input[type=text], input[type=password] {
   border: none;
   cursor: pointer;
   width: 100%;
+}
+
+.pro-ed-button a{
+	background-color: rgb(84, 139, 114);
+  color: white;
+  padding: 5px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+	width: 10%;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.pro-del-button{
+	background-color: rgb(184, 65, 65);
+  color: white;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+	width: 80%;
+	text-decoration: none;
+}
+.pro-td-button{
+	background-color: rgb(84, 139, 114);
+  color: white;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+	width: 80%;
+	text-decoration: none;
+}
+
+.pro-td2-button{
+	background-color:rgb(184, 65, 65);
+  color: white;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+	width: 80%;
+	text-decoration: none;
 }
 
 button:hover {
@@ -752,7 +815,7 @@ span.psw {
 
 	.mySlides2{
 		/* width: 20px;  */
-	 height: 400px;
+	 height: 10px!important;
 	}
 
 	.black{
@@ -785,4 +848,12 @@ span.psw {
 	width: 7rem;
 	height:7rem;
 	margin-left: 2em;       
+ }
+
+ .property-photo{
+	border-radius: 30%;
+	background-color: #c4bebe;
+	width: 5rem;
+	height:5rem;
+	/* margin-left: 2em;        */
  }

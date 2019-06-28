@@ -46,22 +46,19 @@
 
 <!-- main content  -->   
    
-<div id="main" class="wrapper clearfix">    
+<div id="main" class="clearfix smoke2">    
      
 <!-- content  -->    
 	<section id="content">
-            <div class="postAdTitle">
-                    <h2 class="table-title">Adverts List</h2>
-                       <hr>        
-                    <div class="postAdBtn">
-                            <a href="post-ads.html">Post</a>
-                    </div>
+                 <div class="postAdTitle">
+                      <h2 class="table-title">Adverts List</h2>
+                      <hr class="hr-padding-btm">  
+                      <a class="postAdBtn" href="post-ads.html">Post</a>
                 </div>  
-
+                <div class="table-responsive">
                     <table id="my-table" class="box-shadow">
                       <tr>
                         <th>Owner</th>
-                        
                         <th>Price</th>
                         <th>City</th>
                         <th>Adress</th>
@@ -81,10 +78,11 @@
                         <td>2 bedroom</td>
                         <td>19/06/2019</td>
                         <td><img class="property-photo" src="images/boundary-wall-design_800x600.jpg"  alt="user"></td>
-                        <td><button class="pro-td-button" >Available</button></td>
+                        <td> <button class="pro-td-button" onclick="this.innerHTML='Sold';this.classList.add('pro-td2-button');" href="">Available</button></td>
+                        
                         <td>
-                            <div class="pro-ed-button"><a href="edit-ads.html">Edit</a></div>
-                            <button class="pro-del-button" >Delete</button>
+                            <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
+                            <div class="pro-del-button"><a onclick="alert('are u sure you want to delete?')" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                         </td>
                       </tr>
                       <tr>
@@ -96,10 +94,10 @@
                           <td>3 bedroom</td>
                           <td>20/06/2019</td>
                           <td><img class="property-photo" src="images/clifton-house-project-architecture_dezeen_hero-1.jpg"  alt="user"></td>
-                          <td><button class="pro-td2-button" >Sold</button></td>
+                          <td><button class="pro-td2-button" href="">Sold</button></td> 
                           <td>
-                              <div class="pro-ed-button"><a href="edit-ads.html">Edit</a></div>
-                              <button class="pro-del-button" >Delete</button>
+                              <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
+                              <div class="pro-del-button"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                           </td>
                         </tr>
                         <tr>
@@ -111,10 +109,10 @@
                             <td>2 bedroom</td>
                             <td>19/06/2019</td>
                             <td><img class="property-photo" src="images/boundary-wall-design_800x600.jpg"  alt="user"></td>
-                            <td><button class="pro-td-button" >Available</button></td>
+                            <td> <button onclick="this.innerHTML='Sold';this.classList.add('pro-td2-button');" class="pro-td-button s" href="">Available</button></td>
                             <td>
-                                <div class="pro-ed-button"><a href="edit-ads.html">Edit</a></div>
-                            <button class="pro-del-button" >Delete</button>
+                                <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
+                                <div class="pro-del-button a"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                             </td>
                           </tr>
                           <tr>
@@ -126,15 +124,15 @@
                               <td>3 bedroom</td>
                               <td>20/06/2019</td>
                               <td><img class="property-photo" src="images/clifton-house-project-architecture_dezeen_hero-1.jpg"  alt="user"></td>
-                              <td><button class="pro-td2-button" >Sold</button></td>
+                              <td><button class="pro-td2-button" href="">Sold</button></td>
                               <td>
-                                  <div class="pro-ed-button"><a href="edit-ads.html">Edit</a></div>
-                                  <button class="pro-del-button" >Delete</button>
+                                  <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
+                                  <div class="pro-del-button"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                               </td>
                             </tr>
                       
                     </table>     
-
+                </div>
     </section><!-- #end content  -->
   
     <!-- sidebar -->    

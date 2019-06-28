@@ -3,7 +3,7 @@
 body{
 	background:#fff;
 	color:#666;
-	font-family:'Droid Serif', Arial, Helvetica, sans-serif; 
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 	font-size:1em;
 	line-height:1.4em; 
 	font-weight:normal;
@@ -16,14 +16,13 @@ h1, h2, h3, h4, h5, h6{
 	padding:0;
 } 
 
+
 /* links */
-a,
+/* a,
 a:visited,
 a:active,
 a:hover{color:#0099ff;}
-a:hover{ text-decoration:none;}
-
-
+a:hover{ text-decoration:none;} */
 
 *{	box-sizing:border-box;
 	-moz-box-sizing:border-box;}
@@ -196,9 +195,20 @@ a.buttonlink{
 a.buttonlink:hover{
 	background:#666;
 }
-.greenelement{
-	background:#e2e2e2;
-	color:#fff;
+.smoke{
+	background:#f3f3f3;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+}
+
+.smoke2{
+	background:#f3f3f3;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+	border-left:1px solid #e2e2e2;
+	border-right:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+	padding: 0 4em;
 }
 .violetelement{
 	background:#887dc2;
@@ -462,10 +472,7 @@ DESKTOP
 } 
 
 
-@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { 
 
-  
-}
 
 /*
 PRINT STYLESHEET
@@ -586,42 +593,36 @@ input[type=text], input[type=password], select {
 }
 
 .pro-ed-button a{
-	background-color: rgb(84, 139, 114);
-  color: white;
+  color: rgb(60, 159, 172);
   padding: 5px 20px;
   margin: 10px 0;
-  border: none;
-  cursor: pointer;
-	width: 10%;
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 20px;
 }
 
-.pro-del-button{
-	background-color: rgb(184, 65, 65);
-  color: white;
-  padding: 5px 15px;
+.pro-del-button a{
+  color: rgb(184, 65, 65);
+  padding: 5px 20px;
   margin: 10px 0;
-  border: none;
-  cursor: pointer;
-	width: 80%;
 	text-decoration: none;
+	font-size: 20px;
 }
 .pro-td-button{
 	background-color: rgb(84, 139, 114);
   color: white;
   padding: 5px 15px;
-  margin: 10px 0;
+  margin: 10px 5px;
   border: none;
   cursor: pointer;
 	width: 80%;
 	text-decoration: none;
+	text-align: center;
 }
 
 .pro-td2-button{
 	background-color:rgb(184, 65, 65);
   color: white;
-  padding: 5px 15px;
+  padding: 5px 20px;
   margin: 10px 0;
   border: none;
   cursor: pointer;
@@ -695,7 +696,7 @@ a{
   background-color: #fefefe;
   margin: 0 auto 15% auto; 
   border: 1px solid #888;
-	width: 80%;
+	width: 50%;
 	border-radius: 3px; 
 }
 .box-shadow{
@@ -718,7 +719,7 @@ a{
 		color: #D8000C;
     background-color: #FFD2D2;
 		margin: 5% auto 0 auto; 
-    width: 80%; 
+    width: 50%; 
 	}
 
 	.alert-success{
@@ -726,7 +727,7 @@ a{
 		color: #4F8A10;
     background-color: #DFF2BF;
 		margin: 5% auto 0 auto; 
-    width: 80%;
+    width: 50%;
 	}
 	
 	.closebtn {
@@ -749,14 +750,21 @@ a{
 		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 		border-collapse: collapse;
 		width: 100%;
+		overflow-x: auto;
+		background: #fff;
 	}
 	
+
+	.table-responsive{
+		overflow-x:auto;
+		margin-bottom: 50px
+	}
+
 	#my-table td, #my-table th {
-		border: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
 		padding: 8px;
 	}
 	
-	#my-table tr:nth-child(even){background-color: #f2f2f2;}
 	
 	#my-table tr:hover {background-color: #ddd;}
 	
@@ -768,24 +776,25 @@ a{
 		color: white;
 	}
 
-	.postAdBtn a{
-		float: right;
+	a.postAdBtn{
 		background-color: #333;
 		color: white;
-		padding: 6px 0;
-		margin: 8px 0;
-		border: none;
-		cursor: pointer;
-		width: 10%;
-		height: 60%;
 		text-align: center;
 		text-decoration: none;
-		text-align: center;
+		margin:10px 15px 10px 0; 
+		padding:10px 20px;
 	}
+
+
 	.postAdBtn a:hover{
 		background:#666;
 	}
-
+	.hr-padding-btm{
+		margin-bottom: 15px
+	}
+	.postAdTitle{
+    margin-bottom: 15px
+	}
 
 	.table-title{
 		text-align: center;
@@ -811,8 +820,12 @@ a{
 		text-decoration: none; 
 		font-size: 20px;
 		color: #333;
+		font-family: monospace; 
 	}
-
+	@font-face {
+		font-family: monospace;
+		src: url(sansation_light.woff);
+	}
 	#logo{
 		padding: 1em 0;
 	}
@@ -920,4 +933,24 @@ a{
 	}
 }
 
-
+@media only screen and (min-width: 920px) {
+	.sm-space{
+		max-width: 30%;
+		margin: 1.666666667%; 
+	}
+	}
+	@media screen  and (max-width: 920px) {
+		.sm-space{
+			max-width: 45%;
+			margin: 1.25%; 
+			float: left;
+		}
+		
+	}
+	@media screen  and (max-width: 600px) {
+		.sm-space{
+			max-width: 90%;
+			margin: 5%; 
+			float: left;
+		}
+	}

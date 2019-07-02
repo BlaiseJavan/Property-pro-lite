@@ -15,6 +15,9 @@
 <!-- Google web fonts.-->
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
 
+<!-- font awosame icons.-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!--CSS-->
 <link rel="stylesheet" href="css/style.css">
 
@@ -32,11 +35,11 @@
         
         <!-- main navigation -->
       <nav id="topnav" role="navigation">
-        <div class="menu-toggle">Menu</div>  
+        <div class="menu-toggle"><hr class="hr"><hr class="hr"></div> 
         	<ul class="srt-menu" id="menu-main-navigation">
             <li class="current"><a href="view-properties.html">Properties</a></li>
             <li><a href="view-ads.html">Advertise</a></li>
-            <li><a href="login.html">Logout</a></li>
+            <li><a href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
 	      	</ul>     
 	  	</nav><!-- end main navigation -->
   
@@ -48,14 +51,24 @@
               <div class="row">
                 <div class="grid_12 rightfloat">
                     <!--  image slideshow --> 
-                    <div>
-                        <img class="mySlides" src="images/basic-pic2.jpg" style="width:100%">
-                        <img class="mySlides" src="images/basic-pic3.jpg" style="width:100%">
-                        <img class="mySlides" src="images/basic-pic4.jpg" style="width:100%">
+                    <div class="slide-shadow">
+                        <img class="mySlides " src="images/bannerr1.jpg" style="width:100%">
+                        <img class="mySlides" src="images/bannerr2.jpg" style="width:100%">
+                        <img class="mySlides" src="images/bannerr3.jpg" style="width:100%">
                         
+                        <div class="contentt">
+                            <h1>Find Property for Sale or to rent</h1>
+                            <div >
+                                <form>
+                                    <input class="search-input"  type="text" placeholder="Search properties">
+                                    <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                         <button class="sButton black display-left" onclick="plusDivs(-1)">&#10094;</button>
                         <button class="sButton black display-right" onclick="plusDivs(1)">&#10095;</button>
-                        </div>
+                    
 
                         </div><!-- end grid div -->
                    </div><!-- end row  -->
@@ -74,45 +87,51 @@
                     </div>
                </center>
             <!--  section -->
-            <section id="features"  class="greenelement vertical-padding">
+            <section id="features"  class="smoke vertical-padding">
                 <div class="wrapper clearfix">
                 
                 <div class="row vertical-padding">   	
-                    <div class="grid_4 back-color">            
+                    <div class="grid_4 back-color box-shadow sm-space ">            
                     <h3 class="align-center text-black">Family house</h3>
-                        <img class="" src="images/banner2.jpg" />
+                        <img class="img-property" src="images/clifton-house-project-architecture_dezeen_hero-1.jpg" />
                         <p class="align-center text-black">3 bedroom</p> 
-                        <p class="align-center text-black"> $25000.00</p> </div>
+                        <p class="align-center text-black"> $25000.00</p> 
+                    </div>
                     
-                    <div class="grid_4 back-color">        	
+                    <div class="grid_4 back-color box-shadow sm-space">        	
                             <h3 class="align-center text-black">Family house</h3>
                         <img src="images/banner2.jpg" />
                         <p class="align-center text-black">3 bedroom</p> 
-                        <p class="align-center text-black"> $25000.00</p> </div>
+                        <p class="align-center text-black"> $25000.00</p> 
+                    </div>
                 
-                    <div class="grid_4 back-color">        	
+                    <div class="grid_4 back-color box-shadow sm-space">        	
                         <h3 class="align-center text-black">Family house</h3>
-                        <img src="images/banner2.jpg" />
+                        <img src="images/Modern-house-in-Auckland-New-Zealand.jpg" />
                     <p class="align-center text-black">3 bedroom</p> 
-                    <p class="align-center text-black"> $25000.00</p> </div> 
+                    <p class="align-center text-black"> $25000.00</p> 
+                </div> 
                     
-                         <div class="grid_4 back-color">            
+                         <div class="grid_4 back-color box-shadow sm-space">            
                             <h3 class="align-center text-black">Family house</h3>
                                 <img src="images/boundary-wall-design_800x600.jpg" />
                                 <p class="align-center text-black">3 bedroom</p> 
-                                <p class="align-center text-black"> $25000.00</p> </div>
+                                <p class="align-center text-black"> $25000.00</p> 
+                            </div>
                             
-                            <div class="grid_4 back-color">        	
+                            <div class="grid_4 back-color box-shadow sm-space">        	
                                     <h3 class="align-center text-black">Family house</h3>
                                 <img src="images/clifton-house-project-architecture_dezeen_hero-1.jpg" />
                                 <p class="align-center text-black">3 bedroom</p> 
-                                <p class="align-center text-black"> $25000.00</p> </div>
+                                <p class="align-center text-black"> $25000.00</p> 
+                            </div>
                         
-                            <div class="grid_4 back-color">        	
+                            <div class="grid_4 back-color box-shadow sm-space">        	
                                 <h3 class="align-center text-black">Family house</h3>
                                 <img src="images/boundary-wall-design_800x600.jpg" />
                             <p class="align-center text-black">3 bedroom</p> 
-                            <p class="align-center text-black"> $25000.00</p> </div> 
+                            <p class="align-center text-black"> $25000.00</p> 
+                        </div> 
                 </div>
             
                 </div><!-- #end div .wrapper -->

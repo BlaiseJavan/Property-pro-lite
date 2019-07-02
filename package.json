@@ -35,5 +35,13 @@
   "directories": {
     "test": "tests"
   },
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlaiseJavan/Property-pro-lite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlaiseJavan/Property-pro-lite/issues"
+  },
+  "homepage": "https://github.com/BlaiseJavan/Property-pro-lite#readme"
 }

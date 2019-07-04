@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.use(router);
 
-app.listen(process.env.PORT || 9090);
+app.listen(process.env.PORT || 9093);
 console.log('app running on port');
 
 export default app;

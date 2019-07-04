@@ -54,4 +54,16 @@ describe('Property', () => {
           });
       });
     });
+    describe('mark a property as sold with id 1', () => {
+      it('should mark one property object', (done) => {
+        chai
+          .request(app)
+          .put('/api/v1/property/1')
+          .end((err, res) => {
+            chai.expect(res.statusCode).to.be.equal(200);
+            chai.expect(res.body).to.be.a('object');
+            done();
+          });
+      });
+    });
 });

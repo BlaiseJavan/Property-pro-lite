@@ -40,6 +40,13 @@ class propertyController {
       error: 'Property cannot be updated',
     });
   }
+  
+  static markAsSold(req, res) {
+    const { id } = req.params;
+    const property = Property.find(updateProperty => updateProperty.id == id);
+    (property.status = 'sold');  
+    return res.status(200).json({status: 'success', sold: property});
+  }
 }
 
 export default propertyController;

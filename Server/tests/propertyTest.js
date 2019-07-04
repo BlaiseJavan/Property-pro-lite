@@ -66,4 +66,29 @@ describe('Property', () => {
           });
       });
     });
+    describe('Delete a property with id 3', () => {
+      it('should return one property object', (done) => {
+        const id = 3;
+        chai
+          .request(app)
+          .delete('/api/v1/property/1')
+          .end((err, res) => {
+            chai.expect(res.statusCode).to.be.equal(200);
+            chai.expect(res.body).to.be.a('object');
+            done();
+          });
+      });
+    });
+  describe('Delete a property with id 1000', () =>{
+    it('should return error', (done) => {
+      const id = 10000;
+      chai
+        .request(app)
+        .delete('/api/v1/property/1')
+        .end((err, res) => {
+          chai.expect(res.statusCode).to.be.equal(400);
+          done();
+        });
+    });
+  });
 });

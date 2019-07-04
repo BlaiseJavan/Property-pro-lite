@@ -40,12 +40,31 @@ class propertyController {
       error: 'Property cannot be updated',
     });
   }
-  
+
   static markAsSold(req, res) {
     const { id } = req.params;
     const property = Property.find(updateProperty => updateProperty.id == id);
     (property.status = 'sold');  
     return res.status(200).json({status: 'success', sold: property});
+  }
+
+  static deleteProperty(req, res) {
+    const { id } = req.params;
+    const findProperty = Property.find(property => property.id == id);
+    const Index = Property.indexOf(findProperty);
+    if (findProperty) {
+      const newProperties = Property.splice(Index, 1);
+      res.status(200).json({ status: 'success', message: 'Property successfully deleted', newProperties: newProperties});
+    } else {
+      res.status(400).json({
+        error: 'Property could not be deleted',
+      });
+    }
+  }
+
+  static getProperty(req, res) {
+    return res.status(200).json({status: 200, proprties: Property
+    });
   }
 }
 

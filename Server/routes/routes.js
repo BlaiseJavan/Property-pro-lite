@@ -13,5 +13,6 @@ router.get('/', (req, res) => {
 router.post('/api/v1/property', propertyController.createProperty);
 router.put('/api/v1/property/:id', propertyController.updateProperty);
 router.put('/api/v1/makAsSold/:id', propertyController.markAsSold);
+router.delete('/api/v1/property/:id', propertyController.deleteProperty);
 
 export default router;

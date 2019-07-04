@@ -91,4 +91,17 @@ describe('Property', () => {
         });
     });
   });
+  describe('All properties', () => {
+    it('should return an object of all properties', (done) => {
+      chai
+        .request(app)
+        .get('/api/v1/property')
+        .end((err, res) => {
+          
+          chai.expect(res.statusCode).to.be.equal(200);
+          chai.expect(res.body).to.be.a('object');
+          done();
+        });
+    });
+  });
 });

@@ -66,6 +66,10 @@ class propertyController {
     return res.status(200).json({status: 200, proprties: Property
     });
   }
+  static getProperties(req, res) {
+    return res.status(200).json({status: 200, proprties: Property
+    });
+  }
 }
 
 export default propertyController;

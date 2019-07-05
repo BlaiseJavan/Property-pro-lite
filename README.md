@@ -1,4 +1,4 @@
- # <a href="#"><img src="UI/images/blaise-logo.png" title="FVCproductions" alt="FVCproductions" width="10%"></a>
+ # <a href="#"><img src="UI/images/blaise-logo.png" title="FVCproductions" alt="FVCproductions" width="30%"></a>
 Property Pro Lite is a platform where people can create and/or search properties for sale or rent.
 
 [![Build Status](https://travis-ci.org/BlaiseJavan/Property-pro-lite.svg?branch=develop)](https://travis-ci.org/BlaiseJavan/Property-pro-lite)
@@ -14,11 +14,11 @@ Class Hierachy
                  |--------------|        
                 /|  Property    |\ 
                / |--------------| \          
-            buys                 has-a               
+            has-a                 buys              
              /                      \
             /                        \                 
     |------------|                 |------------|
-    |     User   |--------is-a-----| User-agent |
+    | User-agent |-------is-a------|    User    |
     |------------|                 |------------|
     
 
@@ -28,7 +28,7 @@ Class Hierachy
 
 > https://www.pivotaltracker.com/n/projects/2354127
 
-**gh-pages**
+**gh-page**
 
 > https://blaisejavan.github.io/Property-pro-lite/UI/index.html
 

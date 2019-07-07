@@ -11,7 +11,7 @@
 <!-- Mobile viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<link rel="icon" href="images/favicon .ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <!-- Google web fonts.-->
 <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
 
@@ -20,7 +20,7 @@
 
 <!-- end CSS-->
 </head>
-<body>
+<body class="user-home">
 
 <div  class="modal">
    <div class="container">
@@ -31,19 +31,22 @@
     </div> 
                
 <form class="modal-content box-shadow" action="view-properties.html">
-        <h2 class="align-center">Sign in</h2>   
+    <div id="banner" class="padding">        
+        <!-- <div id="logo"><a href="index.html">PropertyPro-lite</a></div>  -->
+        <div class="align-center" id="go-to-home"><a href="index.html"><img src="images/blaise-logo-2.png" alt=""></a></div> 
+      </div>  
     <div class="container">
       <label> <b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
       <label ><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-      <button class="button" type="submit">Login</button>
+      <button class="button main-border-radius" type="submit">Login</button>
     </div>
 
-    <div class="container">
+    <!-- <div class="container"> -->
         <span class="signup">Don't have an account yet? <a href="signup.html">Sign up</a></span>
-    </div>
+    <!-- </div> -->
   </form>
 </div>
 

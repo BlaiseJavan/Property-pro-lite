@@ -9,7 +9,7 @@ cache:
 script:
   - npm test
 after_success:
-  - npm run coveralls
+  - npm run coverage
 addons:
     repo_token:
       secure: "4247a3711f1ca6f907aefabfa6927930683e2f6c"

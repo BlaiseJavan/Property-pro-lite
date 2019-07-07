@@ -128,4 +128,21 @@ function closeAllSelect(elmnt) {
 	}
 }
 
+//defining signin & signup button 
+const signin = document.querySelectorAll(".srt-menu li")[0];
+const signup = document.querySelectorAll(".srt-menu li")[1];
+
+//to asign signin as current when mouseover 
+signup.addEventListener("mouseover", function(){
+	 this.classList.add("current");
+	 signin.classList.remove("current");
+});
+
+//to remove current class on signin when mouseout 
+signup.addEventListener("mouseout", function(){
+	this.classList.remove("current");
+	signin.classList.add("current");
+});
+
 document.addEventListener("click", closeAllSelect);
+

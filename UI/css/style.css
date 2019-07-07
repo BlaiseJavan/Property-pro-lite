@@ -30,13 +30,15 @@ a:hover{ text-decoration:none;} */
 /* structure */   
 .wrapper{
 	width: 92%; 
-	margin: 0 auto;
+	margin: 0 auto; 
 }
 header{ 
-	padding:15px 0;
+	padding:20px 0;
 }
+
 #banner{ 
-	text-align:center;
+	/* text-align:center; */
+	/* padding: 20px */
 }	
 #hero,
 #page-header{
@@ -99,18 +101,18 @@ li{
 	
 }
 .srt-menu li a {
-	color:#333;
-	background:#dadada;
+	color:#222222;
+	/* background:#dadada; */
 	display:block;
 	margin:1px 0; 
 	padding:10px;
 	text-decoration:none;
 	font-size:.9em;
 }
-.srt-menu li a:hover{
-	background:#666;
-	color:#fff;
-}
+/* .srt-menu li a:hover{
+	border: solid 1px #fc5f00;
+	border-radius: 3px
+} */
 .srt-menu li li a {
 	background:#e8e8e8;
 	padding-left:40px;
@@ -138,11 +140,7 @@ li{
 	text-decoration:none;
 	
 }
-#secondary-navigation ul li a:hover,
-#secondary-navigation ul li.current a{
-	background:#333;
-	color:#fff;
-}
+
 
 /*SPACE GRID ELEMENTS VERTICALLY*/
 .grid_1,
@@ -268,12 +266,20 @@ header{
 #banner{ 
 	float:left; 
 	text-align:left;
-	margin-bottom:0px;
-	margin-top:5px;
+	margin-bottom:-40px;
 }
-
+.main-border-radius{
+	border-radius: 3px;
+}
+.padding{
+	padding-bottom: 40px;
+}
 #hero{
 	padding:0;
+	margin-top: 42px
+}
+.hero2{
+	margin-bottom: 42px
 }
 
 #content {  
@@ -333,15 +339,7 @@ aside {
 	display:		block;
 	position:		relative;
 }
-.srt-menu li:hover ul,
-.srt-menu li.sfHover ul {
-	display:block;
-	left:			0;
-	top:			42px;
-	z-index:		99;
-	-webkit-box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
-    box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
-}
+
 ul.srt-menu li:hover li ul,
 ul.srt-menu li.sfHover li ul {
 	top:			-999em;
@@ -391,14 +389,14 @@ ul.srt-menu li li li.sfHover ul {
 	background:rgba(0,0,0,.6);
 }
 
-.srt-menu li:hover > a,
+/* .srt-menu li:hover > a, */
 .srt-menu li.current a{ 
-	color:#fff;
-	background:#333;
+	border: solid 1px #fc5f00;
+	border-radius: 3px
 }
 .srt-menu li li:hover > a{
-	color:#fff;
-	background:#666;
+	/* color:#fff; */
+	/* background:#666; */
 }
 
 
@@ -470,8 +468,6 @@ DESKTOP
 
 
 } 
-
-
 
 
 /*
@@ -653,21 +649,27 @@ img.avatar {
 
 span.psw {
   float: right;
-	padding-top: 22px;
+	/* padding-top: 22px; */
+	padding: 0 10px; 
+	margin: 0 10px; 
 }
 span.psw a:hover{	
 	text-decoration-line: underline;
 }
 span.signin{
-	float: left;
-	padding-top: 22px;	
+	/* float: left; */
+	padding: 0 10px; 
+	margin: 0 10px; 
+	/* padding-top: 22px;	 */
 }
 span.signin a:hover{	
 	text-decoration-line: underline;
 }
-span.signup{
-	float: left;
-	padding-top: 22px;
+.signup{
+	/* float: left; */
+	/* padding-top: 22px; */
+	padding: 0 10px; 
+	margin: 0 10px; 
 }
 span.signup a:hover{	
 	text-decoration-line: underline;
@@ -698,9 +700,11 @@ a{
   border: 1px solid #888;
 	width: 50%;
 	border-radius: 3px; 
+	padding: 20px
 }
 .box-shadow{
-	box-shadow: 0 3px 5px #414040;
+	box-shadow: 0 2px 2px #414040;
+	background:#f3f3f3;
 }
 
 /* Change styles for the span */
@@ -816,11 +820,22 @@ a{
 		background-color: #45a049;
 	}
 
-	#logo a{
-		text-decoration: none; 
-		font-size: 20px;
-		color: #333;
-		font-family: monospace; 
+	#go-to-home img{
+		width: 50%;
+	}
+
+	.user-home{
+		background-image: url("../images/black-wallpaper-high-resolution.jpg ");
+		font-family: 'Quicksand', sans-serif;
+		overflow: visible; 
+	}
+	#logo img{
+		width: 20%;
+		/* padding-top: .50px; */
+		/* height: 30px; */
+		/* margin: 10px;	 */
+    margin-top:-15px; 
+		/* margin-bottom: 30px; */
 	}
 	@font-face {
 		font-family: monospace;

@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "stable"
+install:
+  - npm install
+cache:
+  directories:
+  - node_modules  
+script:
+  - npm test
+after_success:
+  - npm run coveralls
+addons:
+    repo_token:
+      secure: "4247a3711f1ca6f907aefabfa6927930683e2f6c"

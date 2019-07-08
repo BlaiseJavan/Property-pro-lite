@@ -1,13 +1,13 @@
 /* eslint-disable linebreak-style */
 import express from 'express';
-// import router from '../routes/routes';
+import router from '../routes/routes';
 
 const app = express();
 app.use(express.json());
 
-// app.use(router);
+app.use(router);
 
-app.listen(process.env.PORT || 9097);
+app.listen(process.env.PORT || 9098);
 console.log('app running on port');
 
 export default app;

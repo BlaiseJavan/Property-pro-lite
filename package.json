@@ -4,9 +4,9 @@
   "description": "PropertyPro lite is a platform where people can create and/or search properties for sale or rent",
   "main": "server.js",
   "scripts": {
-    "test": "nyc --require babel-core/register mocha tests/*.js --timeout 15000 --exit",
+    "test": "nyc --require babel-core/register mocha Server/tests/*.js --timeout 15000 --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "start": "nodemon --exec babel-node Server/src/server.js"
+    "start": "nodemon --exec babel-node ./Server/src/server.js"
   },
   "author": "Blaise",
   "license": "MIT",
@@ -35,13 +35,5 @@
   "directories": {
     "test": "tests"
   },
-  "keywords": [],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BlaiseJavan/Property-pro-lite.git"
-  },
-  "bugs": {
-    "url": "https://github.com/BlaiseJavan/Property-pro-lite/issues"
-  },
-  "homepage": "https://github.com/BlaiseJavan/Property-pro-lite#readme"
+  "keywords": []
 }

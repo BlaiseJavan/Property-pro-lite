@@ -78,11 +78,11 @@
                         <td>2 bedroom</td>
                         <td>19/06/2019</td>
                         <td><img class="property-photo" src="images/boundary-wall-design_800x600.jpg"  alt="user"></td>
-                        <td> <button class="pro-td-button" onclick="this.innerHTML='Sold';this.classList.add('pro-td2-button');" href="">Available</button></td>
+                        <td> <button onclick="this.innerHTML='Sold';this.classList.add('pro-td2-button');" class="pro-td-button" class="myBtn" href="">Available</button></td>
                         
                         <td>
                             <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
-                            <div class="pro-del-button"><a onclick="alert('are u sure you want to delete?')" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+                            <div class="pro-del-button"><a class="myBtn" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                         </td>
                       </tr>
                       <tr>
@@ -97,7 +97,7 @@
                           <td><button class="pro-td2-button" href="">Sold</button></td> 
                           <td>
                               <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
-                              <div class="pro-del-button"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+                              <div class="pro-del-button"><a class="myBtn" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                           </td>
                         </tr>
                         <tr>
@@ -112,7 +112,7 @@
                             <td> <button onclick="this.innerHTML='Sold';this.classList.add('pro-td2-button');" class="pro-td-button s" href="">Available</button></td>
                             <td>
                                 <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
-                                <div class="pro-del-button a"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+                                <div class="pro-del-button a"><a class="myBtn" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                             </td>
                           </tr>
                           <tr>
@@ -127,12 +127,26 @@
                               <td><button class="pro-td2-button" href="">Sold</button></td>
                               <td>
                                   <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
-                                  <div class="pro-del-button"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+                                  <div  class="pro-del-button"><a class="myBtn" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                               </td>
                             </tr>
                       
                     </table>     
                 </div>
+                       
+                    <!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Are you sure you want to delete?</p>
+                    <button class="close-yes postAdBtn main-border-radius">cancel</button>
+                    <button class="close-cancel postAdBtn main-border-radius">yes</button>
+                    </div>
+                
+                </div>
+
     </section><!-- #end content  -->
   
     <!-- sidebar -->    
@@ -161,6 +175,8 @@
 </footer><!-- #end footer --> 
  
 <script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+
 
 </body>
 </html>

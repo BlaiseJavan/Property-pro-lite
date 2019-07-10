@@ -19,5 +19,6 @@ router.get('/api/v1/property', propertyController.getProperties);
 
 //user routes
 router.post('/api/auth/signup', usercontroller.Signup);
+router.post('/api/auth/signin', usercontroller.Signin);
 
 export default router;

@@ -66,8 +66,21 @@ class propertyController {
     return res.status(200).json({status: 200, proprties: Property
     });
   }
-  static getProperties(req, res) {
-    return res.status(200).json({status: 200, proprties: Property
+
+  static getPropertyByType(req, res) {
+    const { type } = req.params;
+    const findProperty = Property.filter(property => property.type == type);
+    return res.status(200).json({ status: 'success', PropertyByType: findProperty });
+  }
+
+  static getOneProperty(req, res) {
+    const { id } = req.params;
+    const property = Property.find(oneproperty => oneproperty.id == id);
+    if (property) {
+      return res.status(200).json({status: 200, oneproperty: property,});
+    }
+    res.status(400).json({
+      error: 'no Property found with that id',
     });
   }
 }

@@ -2,6 +2,7 @@
 //  Handles toggling the navigation menu for small screens.
 
 ( function() {
+	
 	var button = document.getElementById( 'topnav' ).getElementsByTagName( 'div' )[0],
 	    menu   = document.getElementById( 'topnav' ).getElementsByTagName( 'ul' )[0];
 
@@ -28,6 +29,9 @@
 } )();
 
 
+
+
+
 //  image slideshow 
 
 var slideIndex = 1;
@@ -49,7 +53,6 @@ function showDivs(n) {
 }
 
 
-
 var slideIndex = 0;
 carousel();
 
@@ -64,6 +67,7 @@ function carousel() {
   x[slideIndex-1].style.display = "block"; 
   setTimeout(carousel, 3000); 
 }
+
 
 
 var x, i, j, selElmnt, a, b, c;
@@ -128,6 +132,7 @@ function closeAllSelect(elmnt) {
 	}
 }
 
+
 //defining signin & signup button 
 const signin = document.querySelectorAll(".srt-menu li")[0];
 const signup = document.querySelectorAll(".srt-menu li")[1];
@@ -143,6 +148,10 @@ signup.addEventListener("mouseout", function(){
 	this.classList.remove("current");
 	signin.classList.add("current");
 });
+
+
+
+
 
 document.addEventListener("click", closeAllSelect);
 

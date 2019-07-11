@@ -2,8 +2,6 @@ import express from 'express';
 import propertyController from '../controllers/propertyController';
 import usercontroller from '../controllers/usersController';
 
-
-
 const router = express.Router();
 
 router.get('/', (req, res) => {

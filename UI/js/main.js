@@ -63,6 +63,7 @@ function carousel() {
   setTimeout(carousel, 3000); 
 }
 
+
 var x, i, j, selElmnt, a, b, c;
 
 x = document.getElementsByClassName("custom-select");

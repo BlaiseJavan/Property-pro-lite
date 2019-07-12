@@ -1,7 +1,7 @@
 //import
 import moment from 'moment';
 import User from '../db/user';
-import helper from '../middleware/helper';
+import helper from '../helper/helper';
 import userSchema from '../middleware/validation/userSchema';
 
 //user controller
@@ -47,7 +47,7 @@ class userController {
       return user.email === email && helper.comparePassword(user.hashedPassword, password) 
     });
     const token = helper.generateToken(email, password);
-    if (!user) return res.status(401).json({ status: '401', message: 'wrong username or password' });
+    if (!user) return res.status(400).json({ status: '400', message: 'wrong username or password' });
     user.token = token;
     return res.status(200).json({ status: 'success', user});
   }

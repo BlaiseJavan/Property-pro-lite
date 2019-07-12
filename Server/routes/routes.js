@@ -21,5 +21,6 @@ router.get('/api/v1/property/:id', propertyController.getOneProperty);
 
 router.post('/api/auth/signup', usercontroller.Signup);
 router.post('/api/auth/signin', usercontroller.Signin);
+router.get('/api/auth/displayUsers', usercontroller.ViewAllUsers);
 
 export default router;

@@ -22,6 +22,7 @@ describe('Property', () => {
         .post('/api/v1/property')
         .send(property)
         .end((err, res) => {
+          console.log(res.body)
           chai.expect(res.statusCode).to.be.equal(200);
           chai.expect(res.body).to.be.a('object');
           done();

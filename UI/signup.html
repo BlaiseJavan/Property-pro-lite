@@ -43,12 +43,6 @@
             <label ><b>Last name</b></label>
             <input type="text" placeholder="Enter Last name" name="lname" required>
             
-            <label >Is-admin</label>
-                     <select  name="type">
-                      <option value="true">True</option>
-                     <option value="false">False</option>
-                 
-                 </select>
 
             <label ><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" required>
@@ -56,6 +50,19 @@
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
         
+         
+      <br>
+      Sign Up as: <br>
+      <label >
+         <input type="radio" name="type" value="User">
+         <small>User</small>
+      </label>
+      <label >
+          <input type="radio" name="type" value="User">
+          <small>Admin</small>
+        </label> 
+      <br>
+
       <button class="button main-border-radius" type="submit">Signup</button>
       
     </div>

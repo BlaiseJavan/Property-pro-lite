@@ -14,6 +14,7 @@
 		return false;
 	}
 
+	
 	button.onclick = function() {
 		if ( -1 == menu.className.indexOf( 'srt-menu' ) )
 			menu.className = 'srt-menu';

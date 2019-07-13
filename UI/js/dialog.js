@@ -14,6 +14,7 @@ btn.forEach(function(item){
     }
 })
 
+
 span.onclick = function() {
 	modal.style.display = "none";
 }

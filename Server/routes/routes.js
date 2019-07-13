@@ -4,11 +4,11 @@ import usercontroller from '../controllers/usersController';
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.json({
-    message: 'welcome to property pro lite',
-  });
-});
+// router.get('/', (req, res) => {
+//   res.json({
+//     message: 'welcome to property pro lite',
+//   });
+// });
 
 
 router.post('/api/v1/property', propertyController.createProperty);

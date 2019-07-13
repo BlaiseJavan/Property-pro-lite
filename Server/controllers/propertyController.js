@@ -75,8 +75,7 @@ class propertyController {
   }
 
   static getOneProperty(req, res) {
-    const { id } = req.params;
-    const property = Property.find(oneproperty => oneproperty.id == id);
+    const property = Property.find(oneproperty => oneproperty.id === parseInt(req.params.id));
     if (property) {
       return res.status(200).json({status: 200, oneproperty: property,});
     }

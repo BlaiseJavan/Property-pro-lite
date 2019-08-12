@@ -27,25 +27,25 @@
 <body id="home">
 
 <!-- header-->
-    <header class="wrapper clearfix">
+    <header class="wrapper clearfix hero2">
 		       
         <div id="banner">        
-        	<div id="logo"><a href="view-ads.html">PropertyPro-lite</a></div> 
+                <div id="logo"><img src="images/blaise-logo-2.png" alt=""></div>
         </div>
         
         <!-- main navigation -->
       <nav id="topnav" role="navigation">
         <div class="menu-toggle"><hr class="hr"><hr class="hr"></div>  
-        <ul class="srt-menu" id="menu-main-navigation">
-            <li class="current"><a href="view-properties.html">Properties</a></li>
-            <li><a href="view-ads.html">Advertise</a></li>
-            <li><a href="login.html"> </div><i class="fa fa-sign-out" aria-hidden="true"></i></div></a></li>
-	      	</ul>      
+            <ul class="srt-menu" id="menu-main-navigation">
+                <li ><a href="view-properties.html">Properties</a></li>
+                <li class="current"><a href="view-ads.html">Advertise</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+            </ul>      
 	  	</nav><!-- end main navigation -->
-    </header><!-- end header -->
+    </header><!-- end header --> 
 
 <!-- main content  -->   
-   
+
 <div id="main" class="clearfix smoke2">    
      
 <!-- content  -->    
@@ -53,9 +53,9 @@
                  <div class="postAdTitle">
                       <h2 class="table-title">Adverts List</h2>
                       <hr class="hr-padding-btm">  
-                      <a class="postAdBtn" href="post-ads.html">Post</a>
+                      <a class="postAdBtn main-border-radius" href="post-ads.html">Post</a>
                 </div>  
-                <div class="table-responsive">
+                <div class="table-responsive main-border-radius">
                     <table id="my-table" class="box-shadow">
                       <tr>
                         <th>Owner</th>
@@ -70,21 +70,21 @@
                       </tr>
                       
                       <tr>
-                        <td>Blaise</td>
-                        
-                        <td>$2500.00</td>
-                        <td>Kigali</td>
-                        <td>KG 530 St, Kigali</td>
-                        <td>2 bedroom</td>
-                        <td>19/06/2019</td>
-                        <td><img class="property-photo" src="images/boundary-wall-design_800x600.jpg"  alt="user"></td>
-                        <td> <button class="pro-td-button" onclick="this.innerHTML='Sold';this.classList.add('pro-td2-button');" href="">Available</button></td>
-                        
-                        <td>
-                            <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
-                            <div class="pro-del-button"><a onclick="alert('are u sure you want to delete?')" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
-                        </td>
-                      </tr>
+                            <td>Javan</td>
+                            
+                            <td>$2200.00</td>
+                            <td>Kigali</td>
+                            <td>KG 540 St, Kigali</td>
+                            <td>3 bedroom</td>
+                            <td>20/06/2019</td>
+                            <td><img class="property-photo" src="images/clifton-house-project-architecture_dezeen_hero-1.jpg"  alt="user"></td>
+                            <td><button class="pro-td2-button" href="">Sold</button></td> 
+                            <td>
+                                <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
+                                <div class="pro-del-button"><a class="myBtn" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+                            </td>
+                          </tr>
+                          <tr>
                       <tr>
                           <td>Javan</td>
                           
@@ -97,7 +97,7 @@
                           <td><button class="pro-td2-button" href="">Sold</button></td> 
                           <td>
                               <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
-                              <div class="pro-del-button"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+                              <div class="pro-del-button"><a class="myBtn" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                           </td>
                         </tr>
                         <tr>
@@ -112,7 +112,7 @@
                             <td> <button onclick="this.innerHTML='Sold';this.classList.add('pro-td2-button');" class="pro-td-button s" href="">Available</button></td>
                             <td>
                                 <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
-                                <div class="pro-del-button a"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+                                <div class="pro-del-button a"><a class="myBtn" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                             </td>
                           </tr>
                           <tr>
@@ -127,12 +127,27 @@
                               <td><button class="pro-td2-button" href="">Sold</button></td>
                               <td>
                                   <div class="pro-ed-button"><a href="edit-ads.html"><i class="fa fa-edit" aria-hidden="true"></i></a></div>
-                                  <div class="pro-del-button"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
+                                  <div  class="pro-del-button"><a class="myBtn" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></div>
                               </td>
                             </tr>
                       
                     </table>     
                 </div>
+                      
+                
+                    <!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Are you sure you want to delete?</p>
+                    <button class="close-yes postAdBtn main-border-radius">cancel</button>
+                    <button class="close-cancel postAdBtn main-border-radius">yes</button>
+                    </div>
+                
+                </div>
+
     </section><!-- #end content  -->
   
     <!-- sidebar -->    
@@ -143,7 +158,6 @@
         <h3>Welcome Blaise!</h3>
             <nav id="secondary-navigation">
                     <ul>
-                        <li class="current"><a href="#">Dashboard</a></li>
                         <li><a href="view-ads.html">View Adverts</a></li>
                         
                     </ul>
@@ -161,6 +175,8 @@
 </footer><!-- #end footer --> 
  
 <script src="js/main.js"></script>
+<script src="js/dialog.js"></script>
+
 
 </body>
 </html>

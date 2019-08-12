@@ -4,9 +4,12 @@
   "description": "PropertyPro lite is a platform where people can create and/or search properties for sale or rent",
   "main": "server.js",
   "scripts": {
-    "test": "nyc --require babel-core/register mocha tests/*.js --timeout 15000 --exit",
+    "test": "nyc --require babel-core/register mocha Server/tests/*.js --timeout 15000 --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "start": "nodemon --exec babel-node Server/src/server.js"
+    "build": "babel ./Server -d build",
+    "start": "npm run build && node build/src/server.js",
+    "dev": "nodemon --exec babel-node ./Server/src/server.js"
+  
   },
   "author": "Blaise",
   "license": "MIT",
@@ -15,13 +18,14 @@
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
+    "joi": "^14.3.1",
     "jsonwebtoken": "^8.5.1",
-    "moment": "^2.24.0"
-  },
-  "devDependencies": {
+    "moment": "^2.24.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
+    "babel-register": "^6.26.0"
+  },
+  "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "coveralls": "^3.0.4",
@@ -35,13 +39,5 @@
   "directories": {
     "test": "tests"
   },
-  "keywords": [],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BlaiseJavan/Property-pro-lite.git"
-  },
-  "bugs": {
-    "url": "https://github.com/BlaiseJavan/Property-pro-lite/issues"
-  },
-  "homepage": "https://github.com/BlaiseJavan/Property-pro-lite#readme"
+  "keywords": []
 }
